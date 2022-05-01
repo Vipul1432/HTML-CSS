@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    .box {
+      border-style: solid;
+      width: 250px;
+      height: 250px;
+      animation-name: bgcolorAnimate;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: reverse;
+    }
+
+    @keyframes bgcolorAnimate {
+      0% {
+        background-color: white;
+        transform: rotateX(0deg);
+      }
+
+      25% {
+        background-color: red;
+        transform: rotateX(90deg);
+      }
+
+      50% {
+        background-color: green;
+        transform: rotateX(180deg);
+      }
+
+      75% {
+        background-color: blue;
+        transform: rotate(270deg);
+      }
+
+      100% {
+        background-color: white;
+        transform: rotateY(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class=box>
+    Some Content
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+a.demo:visited
+{
+color:pink;
+}
+a.demo:hover
+{
+color:blue;
+}
+input:focus
+{
+background-color:pink;
+color:#666666;
+}

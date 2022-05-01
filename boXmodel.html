@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BoxModel</title>
+    <style media="screen">
+      UL
+				{
+					background:yellow;
+					margin:20px 20px 20px 20px;
+					padding:10px 10px 10px 10px;
+													/* NO BORDERS SET */
+				}
+        LI
+				{
+					color:white;					/* text color is whhite */
+					background:blue;				/* content, padding will be blue */
+					margin:12px 12px 12px 12px;
+					padding:12px 0px 12px 12px;		/* Note 0px padding right */
+					list-style:none;				/* NO glyphs before a list item*/
+													/* NO BORDERS SET */
+				}
+        LI.withborder
+				{
+					border-style:dashed;
+					border-width:medium;			/* SET  BORER  WIDTH ALL SIDES*/
+					border-color:lime;
+				}
+
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>First element of list</li>
+      <li class="withborder">Second element of list is a bit longer to illustrate wrapping</li>
+      
+    </ul>
+  </body>
+</html>

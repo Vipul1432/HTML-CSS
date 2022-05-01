@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .box{
+		border-style:solid;
+		width:100px;
+		height:100px;
+		animation-name: RotateAnimation, bgcolorAnimate;
+		animation-duration: 4s, 4s;
+		animation-timing-function: linear, linear;
+		animation-iteration-count: infinite,infinite;
+		animation-direction: normal, normal;
+	}
+	@keyframes bgcolorAnimate {
+		0% { background-color:white; }
+		25% { background-color:red; }
+		50% { background-color:green; }
+		75% { background-color:blue; }
+		100% { background-color:white; }
+	}
+@keyframes RotateAnimation{
+		0% { transform: rotateZ(0deg); }
+		25% { transform: rotateZ(90deg); }
+		50% { transform: rotateZ(180deg); }
+		75% { transform: rotateZ(270deg); }
+		100% { transform: rotateZ(360deg); }
+	}
+    </style>
+  </head>
+  <body>
+    <div class=box width="200" height="200">
+Some Content
+</div>
+  </body>
+</html>
